@@ -19,11 +19,11 @@ public class ServiceBus {
     }
 
     public Optional<UserEntity> getUserEntityById(int id) {
-        return userRepo.findById((long) id); // Use 'userRepo' instead of 'Repo'
+        return userRepo.findById((long) id);
     }
 
     public UserEntity SaveUserEntity(UserEntity userEntity) {
-        return userRepo.save(userEntity); // Use 'userRepo' instead of 'Repo'
+        return userRepo.save(userEntity); 
     }
 
     public boolean deleteUserEntity(int id) {
